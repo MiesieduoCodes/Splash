@@ -4,75 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Loading Page</title>
+    <link rel="stylesheet" href="/CSS/Loader.css">k
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #000; /* Black background */
-            font-family: 'Roboto', sans-serif; /* Nice font */
-            color: #fff; /* White text */
-        }
 
-        .loading {
-            font-size: 5rem;
-            text-align: center;
-        }
-
-        .letter {
-            display: inline-block;
-            animation: bounce 0.6s infinite alternate;
-        }
-
-        .letter:nth-child(1) { animation-delay: 0s; }
-        .letter:nth-child(2) { animation-delay: 0.1s; }
-        .letter:nth-child(3) { animation-delay: 0.2s; }
-        .letter:nth-child(4) { animation-delay: 0.3s; }
-        .letter:nth-child(5) { animation-delay: 0.4s; }
-        .letter:nth-child(6) { animation-delay: 0.5s; }
-
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-20px); }
-        }
-
-        .zoom {
-            animation: zoomIn 1s forwards;
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="loading" id="loadingText">
-        <span class="letter">s</span>
-        <span class="letter">p</span>
-        <span class="letter">l</span>
-        <span class="letter">a</span>
-        <span class="letter">s</span>
-        <span class="letter">h</span>
+        <span class="letter">S</span>
+        <span class="letter">P</span>
+        <span class="letter">L</span>
+        <span class="letter">A</span>
+        <span class="letter">S</span>
+        <span class="letter">H</span>
     </div>
-
-    <script>
-        // Set loading duration (in milliseconds)
-        const loadingDuration = 3000; // 3 seconds
-
-        setTimeout(() => {
-            const loadingText = document.getElementById('loadingText');
-            loadingText.classList.add('zoom');
-        }, loadingDuration);
-    </script>
+    <script src="/Javascript/Loader.js"></script>
 </body>
 </html>
